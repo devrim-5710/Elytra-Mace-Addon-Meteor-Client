@@ -78,12 +78,6 @@ src/main/resources/
 4. Regenerate the wrapper if needed:
    `.\gradlew.bat wrapper --gradle-version <version> && .\gradlew.bat wrapper`
 5. Fix any Minecraft API changes in the source code, then `.\gradlew.bat build`.
-
-## Notes
-
-- Ported from a 1.21.11 addon; the Minecraft calls were remapped to 26.2 mojmap
-  (`ClickType` → `ContainerInput`, `handleInventoryMouseClick` → `handleContainerInput`,
-  `Fireworks.comp_2391()` → `flightDuration()`).
 - The project lives inside OneDrive, which makes Loom builds slower. If you run into file
   locking issues, move it to a non-synced folder (e.g. `C:\dev`).
 
