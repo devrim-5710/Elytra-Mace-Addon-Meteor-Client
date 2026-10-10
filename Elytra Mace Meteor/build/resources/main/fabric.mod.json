@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "elytra-mace",
+  "version": "0.1.0",
+  "name": "Elytra Mace",
+  "description": "Elytra + Mace kill assist addon for Meteor Client.",
+  "authors": [
+    "theflex5710"
+  ],
+  "icon": "assets/elytramace/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.elytramace.addon.ElytraMaceAddon"
+    ]
+  },
+  "mixins": [
+    "elytra-mace.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=25",
+    "minecraft": "~26.2",
+    "meteor-client": "*"
+  }
+}
